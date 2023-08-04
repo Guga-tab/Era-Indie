@@ -1,0 +1,31 @@
+000webhost
+NomeBD: id19498811_login_eraindie;
+UsuarioBD: id19498811_eraindie;
+HospedagemDB: localhost;
+senha: Era-indies13.
+
+infinity
+NomeBD: epiz_32899361_login_eraindie;
+UsuarioBD: epiz_32899361;
+HospedagemDB: sql204.epizy.com;
+senha: OAX0YvTlctxcAZ.000webhost
+NomeBD: id19498811_login_eraindie;
+UsuarioBD: id19498811_eraindie;
+HospedagemDB: localhost;
+senha: Era-indies13.
+
+infinity
+NomeBD: epiz_32899361_login_eraindie;
+UsuarioBD: epiz_32899361;
+HospedagemDB: sql204.epizy.com;
+senha: OAX0YvTlctxcAZ.000webhost
+NomeBD: id19498811_login_eraindie;
+UsuarioBD: id19498811_eraindie;
+HospedagemDB: localhost;
+senha: Era-indies13.
+
+infinity
+NomeBD: epiz_32899361_login_eraindie;
+UsuarioBD: epiz_32899361;
+HospedagemDB: sql204.epizy.com;
+senha: OAX0YvTlctxcAZ.

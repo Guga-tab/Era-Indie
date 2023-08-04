@@ -1,0 +1,132 @@
+<?php
+ session_start(); 
+ include_once('../../classes/usuario.php');
+if(isset($_SESSION['id_usuario']))
+{
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Era Indie</title>
+    <link rel="icon" href="../../img/logo/icone pagina.png">
+    <link rel="stylesheet" href="../../css/top5.css">
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap-3.3.6-dist/js/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <header class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+          <a href="../index.php"><img src="../../img/logo/logo1-semfundo vermelha-branca.png" alt=""></a>
+           <p>A era dos jogos indies é aqui!</p>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+            <ul>
+            <li><a href="../menu/xbox.php" id="nav-xbox">Xbox</a></li>
+            <li><a href="../menu/nintendo.php" id="nav-nintendo">Nintendo</a></li>
+            <li><a href="../menu/playstation.php" id="nav-sony">Playstation</a></li>
+            <li><a href="../menu/promo.php" id="nav-promo">Promoções</a></li>
+            <li class="login"><a id="login" href="../../php/sair.php">Sair</a></li>
+            </ul>
+        </div>
+      </header>
+
+      <center>  
+        <br><br>
+        <h1>JOGOS INDIE DISPONÍVEIS NO PLAYSTATION!</h1>
+        <p id = public>Gustavo Machado - 18.10.2022 Às 10H45</p>
+        <br><br>
+  
+       <div class="TOP5">
+          <h2 class="titulo">Battle Chasers: Nightwar</h2>
+          <p class="conteudo">RPG distribuído pela THQ Nordic, Battle Chasers: Nightwar é uma ação por turnos inspirada em clássicos jogos minimalistas, 
+            porém com gráficos exuberantes e muitos aprimoramentos. O game conta com uma trilha sonora empolgante, história construída 
+            a partir de masmorras e muitas opções de costumização.</p>
+          <a href="https://store.playstation.com/pt-br/product/UP4389-CUSA06807_00-BATTLECHASERSUS0" target="_blank"><img src="https://cdn1.epicgames.com/bd6437617fc841df8c43800901211059/offer/EGS_BattleChasersNightwarDigitalExtras_AirshipSyndicate_DigitalExtras_S1-2560x1440-ac2c45506c544e3eee9291caf81c1933.jpg" class="imgTOP5"></a>
+          <br><br>
+  
+       </div>
+  
+       <div class="TOP5">
+          <h2 class="titulo">Last Stop</h2>
+          <p class="conteudo">Last Stop é uma aventura single-player com grande foco narrativo, onde a história de três personagens 
+            principais se relacionam a partir das ações dos jogadores. O game combina elementos de realidade com 
+            fantasia e traz muitas alternativas para a campanha.</p>
+          <a href="https://store.playstation.com/pt-br/product/UP2470-PPSA02287_00-LASTSTOPSIEA0000" target="_blank"><img src="https://image.api.playstation.com/vulcan/img/rnd/202107/1618/ERNVDa8Nt1u76GiOSeQ0FKfC.png" class="imgTOP5"></a>
+          <br><br>
+          
+       </div>
+  
+       <div class="TOP5">
+          <h2 class="titulo">Cris Tales</h2>  
+          <p class="conteudo"> Cris Tale é um RPG de estilo japonês (JRPG) desenvolvido por um time colombiano, o que já é 
+            bastante interessante por si só. Com um combate que pode se passar em três linhas do tempo diferente,
+             a narrativa mescla algumas histórias da era medieval com a famosa jornada do herói.</p> 
+         <a href="https://www.xbox.com/pt-BR/games/store/cris-tales/9P65SVC7S9N7/0010" target="_blank"><img src="https://jogandocasualmente.com.br/wp-content/uploads/2021/08/review_Cristales_switch00.jpg" class="imgTOP5" ></a>
+         <br><br>
+       </div>
+  
+       <div class="TOP5">
+           <h2 class="titulo">Kona</h2>
+           <p class="conteudo">Kona é um suspense interativo em primeira pessoa baseado em lendas folclóricas. O game tem 
+            foco em exploração e sobrevivência e conta com uma atmosfera incômoda. No game, o detetive Carl Faubert, 
+            se vê preso na neve após um acidente e acaba caindo no “olho do furacão”, tornando-se a caça de um ser misterioso.</p>
+           <a href="https://store.playstation.com/pt-br/product/UP2047-PPSA05384_00-KONA1MAINGAMEPS5" target="_blank"><img src="https://image.api.playstation.com/cdn/EP4062/CUSA07256_00/pJjrN3NKq2vC9Qb0CghS0pgiz6PUIBF7.png" class="imgTOP5"></a>
+           <br><br>
+          
+       </div>
+  
+       <div class="TOP5">
+          <h2 class="titulo">Ghostrunner</h2>
+           <p class="conteudo">Game de ação rápida e universo cyberpunk chama a atenção pelo alto desafio, precisão e visuais
+             inovadores, exigindo que os jogadores aprendam para progredir.</p>
+           <a href="https://store.playstation.com/pt-br/product/UP4040-CUSA24170_00-GHOSTRUNNER00000" target="_blank"> <img src="https://cdn2.unrealengine.com/gr-epic-facebook-twitter-1920x1080-1920x1080-017852587.png?h=720&resize=1&w=1280" class="imgTOP5"></a>
+           <br><br>
+  
+       </div>
+      
+      </center>
+
+      <center>
+        <footer>
+         <div class="rodape">
+            <Strong><p>Informações:</p></Strong>
+            <p>Email: eraindie5@gmail.com</p>
+            <p>Apoio: Etec Centro Paula Souza</p>
+          </div>
+          <div class="rodape2">
+          <Strong><p>Nos siga também nas redes sociais:</p></Strong>
+          <p>facebook: @eraindie</p></a>
+          <p>Instagram: @eraindie</p></a>
+          </div>
+          <p class="copy">© Copyright EraIndie 2022 - 2022. todos os direitos reservados.</p>
+        </footer>
+        </center>
+      </body>
+      </html>
+<?php
+}
+else
+{
+  echo "
+  <script>
+    window.alert('Não permitido')
+    window.location.href='../../php/login.php';
+  </script>";
+  
+}
+?>

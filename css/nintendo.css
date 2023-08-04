@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family: 'Lexend Deca', sans-serif;
+  }
+  
+  body {
+    margin: 0px;
+    background-color: #f5f7ff;
+  }
+
+  /*CABECALHO*/
+  
+  .nav {
+    height: 100px;
+    width: 100%;
+    background-color: #2e3040;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 550; 
+    padding:64px 10px 10px 74px;
+  }
+  
+  .nav-title img{
+	  width: 250px;
+	  height: 40px;
+	  position:absolute;
+	  top:25px;
+	  left: 70px;
+  }
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  .nav > .nav-links > ul li a{
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 15.5px;
+    text-decoration: none;
+  }
+  .nav > .nav-links > ul{
+    padding: 0;
+    margin-top: 62px;
+    margin-right: 250px;
+    list-style: none;
+    position: relative;
+  }
+
+  .nav > .nav-links > ul li{
+    display: inline-block;
+    background-color: #971212;
+    border-radius: 12px;
+  }
+
+  .login{
+    position: absolute;
+    right: -240px;
+    
+  }
+
+  
+  #login:hover{
+    background-color: #f5f7ff;
+    color: black;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+
+  #nav-xbox:hover{
+    background-color: green;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+
+  #nav-sony:hover{
+    background-color: blue;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+
+  #nav-promo:hover{
+    background-color: #f5f7ff;
+    color: black;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+
+  #nav-nintendo:hover{
+    background-color: #971212;
+      border-radius: 8px;
+      transition: 0.5s;
+  }
+
+  .nav > .nav-links > ul li:hover{
+    display: inline-block;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+
+  .nav > #nav-check {
+    display: none;
+  }
+
+ .nav .nav-links ul a.icon{
+ margin-left: 80px;
+ margin-right: 10px;
+ }
+
+ .nav .nav-links ul a i{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px;
+    margin-left: 5px;
+ }
+
+ .nav-title p{
+  font-size: 15.5pt;
+}
+  
+  @media (max-width:750px) {
+
+    .nav{
+      height: 80px;
+      z-index: 1;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 25px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: flex;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 79px;
+      left: 0px;
+    }
+    .nav > .nav-links > ul li a {
+      display: inline-flex;
+      width: 100%;
+	    font-size: 18pt;
+      position: relative;
+      right: 30px;
+    }
+     
+    .nav-title img{
+      margin-top: -10px;
+       margin-left: -45px;
+       width: 220px;
+       height: 35px;
+    }
+
+    .nav-title p{
+      font-size: 12.5pt;
+      margin-top: -10px;
+      margin-left: 5px;
+      margin-left: -45px
+    }
+
+    .login{
+      position: absolute;
+      left: -160px;
+      
+    }
+    /*   */
+
+
+    
+    .nav > .nav-links > ul li{
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+      background-color: #333;
+      z-index: 1;
+    }
+    .nav > .nav-links > ul li a{
+        margin-left: 40%;
+    }
+    .nav .nav-links ul a.icon{
+      margin-left: 33%;
+    }
+
+    /*   */
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+
+  }
+
+  /*FIM CABECALHO*/
+
+  /*CORPO*/
+
+
+  .modulo{
+    display: grid;
+    width: 50%;
+    background-color: #2e3040;
+    padding: 30px;
+    margin-left: 40px;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+  
+  .moduloalloy{
+    display: grid;
+    width: 50%;
+    background-color: #2e3040;
+    padding: 30px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 15px;
+  }
+  
+  .modulo:hover{
+  border-radius: 35px;
+  transition: 0.5s;
+  }
+  
+  .modulo img{
+    grid-column: 1;
+    grid-row: 1;
+    width: 250px;
+    height: 220px;
+    margin: 0px auto;
+  }
+
+  .moduloalloy img{
+    grid-column: 1;
+    grid-row: 1;
+    width: 250px;
+    height: 220px;
+    margin: 0px auto;
+  }
+  
+  
+  .titulo{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0px 25px 0px 25px;
+    font-size: 16pt;
+  }
+  
+  .titulo a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .titulo a:hover{
+    text-decoration: underline;
+    color: white
+  }
+  
+  .conteudoIndieWorld{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 37px 15px 0px 25px;
+    color: #cacaca;
+    font-size: 12pt;
+  }
+
+  .conteudotunic{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 110px 15px 0px 25px;
+    color: #cacaca;
+    font-size: 12pt;
+  }
+  
+  .conteudoalloy{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 140px 15px 0px 25px;
+    color: #cacaca;
+    font-size: 12pt;
+  }
+
+  
+    /*FIM CORPO*/
+
+/*ASIDE*/
+
+.moduloaside{
+    display: grid;
+    width: 305px;
+    padding: 10px;
+    background-color: #2e3040;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 4.0);
+    border-radius: 4px;
+    position: absolute;
+    top: 25%;
+    left: 920px;
+}
+
+.asidetitulo{
+    grid-row: 1;
+    grid-column: 1;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#cut{
+    grid-column: 1;
+    grid-row: 2;
+    width: 250px;
+    height: 350px;
+    border: solid #971212;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 4.0);
+}
+
+#isaac{
+    grid-column: 1;
+    grid-row: 3;
+    width: 250px;
+    height: 350px;
+    border: solid #971212;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 4.0);
+    margin-top: 18px;
+}
+
+/*FIM ASIDE*/
+
+/*RODAPE*/
+
+footer{
+    background-color: #971212;
+    width: 100%;
+    margin-top: 740px;
+  }
+  
+  .rodape{
+    color: #e9f5ff;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: lighter;
+    padding: 5px;
+    text-indent: 100px ;
+    padding-top: 40px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .rodape2{
+    color: #e9f5ff;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: lighter;
+    padding: 5px;
+    text-indent: 120px ;
+    padding-top: 40px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .copy{
+    color: #e9f5ff;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: lighter;
+    padding: 5px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  @media (max-width:750px) {
+  
+    .rodape{
+      color: #e9f5ff;
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: lighter;
+      padding: 5px;
+      text-indent: 100px ;
+      padding-top: 40px;
+      position: relative;
+      right: 50px;
+    }
+    
+    .rodape2{
+      color: #e9f5ff;
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: lighter;
+      padding: 50px;
+      text-indent: 40px ;
+      padding-top: 40px;
+      position: relative;
+      right: 21px;
+    }
+  }
+  
+  /*FIM RODAPE*/
+
+    
+  @media (max-width: 843px){
+
+    .modulo{
+        width: 300px;
+        justify-content: center;
+        position: relative;
+        margin: 15px auto;
+    }
+    
+    .moduloalloy{
+        width: 300px;
+        justify-content: center;
+        position: relative;
+        margin: 15px auto;
+    }
+
+    .titulo{
+        grid-column: 1;
+        grid-row: 2;
+        width: 250px;
+        margin-top: 10px;
+    }
+
+    .conteudoIndieWorld{
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 50px;
+    }
+    
+    .conteudoalloy{
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 180px;
+    }
+     
+    .conteudotunic{
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 150px;
+    }
+    
+    .moduloaside{
+        display: none;
+    }
+}
